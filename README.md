@@ -30,7 +30,7 @@ In the command line:
 
 # Step 2: Build a datatable that shows the count of n-grams for each student within their session
 
-//Generating ngram datatable
+//Generating n-gram datatable
 In the command line: 
 - Go to directory of your scripts
 - Enter $ python3 ngram_datatable.py output_corpus1.csv
@@ -39,11 +39,11 @@ In the command line:
     Output: 
     -  a csv file (output_ngramTable.csv) of n-grams predictors 
 
-# Step 3: Apply a threshold to intentionally include ngrams that occur in X% of converstions (test X for 10, 25, 33 and 50) to establish the most appropriate threshold for the dataset wih respect to the sample. 
-Note: The resulting total number of ngrams will be used to run a generalized regression model. Best practices for running regression model encourages the number of predictors less than the sample size. However, since we are using an exhaustive best subset method, the number of ngramas can be greater than the sample size, within a reasonable threshold.
+# Step 3: Apply a threshold to intentionally include n-grams that occur in X% of converstions (test X for 10, 25, 33 and 50) to establish the most appropriate threshold for the dataset wih respect to the sample. 
+Note: The resulting total number of n-grams will be used to run a generalized regression model. Best practices for running regression model encourages the number of predictors less than the sample size. However, since we are using an exhaustive best subset method, the number of ngramas can be greater than the sample size, within a reasonable threshold.
 
 For instance, in the output_ngramTable.csv, sample size is 10, and the number of n-grams is (48+43 = 91). 
-In the dimension_reducer.py, test different values of X to establish an appropriate number of ngram predictors.
+In the dimension_reducer.py, test different values of X to establish an appropriate number of n-gram predictors.
 
 In command line: 
 - Go to directory of your scripts
@@ -52,7 +52,8 @@ In command line:
 
     Output: 
     - a csv file (output_ngramTable_Xpercent.csv) of X% of the n-grams predictors 
-    - a csv file (output_ngram_numRow.csv) of the ngrams and the number of rows (i.e. number of sessions theuy occur in (not the number of times they occur***))
+    - a csv file (output_ngram_numRow.csv) of the n-grams and the number of rows (i.e. number of sessions they occur in)
+    - a csv file (output_ngram_freq.csv) of the n-grams and their frequency of occurrence(i.e. frequency of each n-gram present in the corpus)
 
 # Step 4: Statistical analysis - Generalized Regression using Best subset selection method
 Go To JMP (the following is based on JMP Pro 15): 
