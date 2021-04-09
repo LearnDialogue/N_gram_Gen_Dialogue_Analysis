@@ -28,6 +28,9 @@ if len(sys.argv) >1:
 
         if(sparsity_counter < (.5* num_sessions)): # appears in 50% or mroe of sessions: X = 50% 
             df.iloc[:, 1:].drop(col, axis = 1, inplace = True)
+        sum_ngrams = df.iloc[:, 1:].sum(axis = 0)
+        freq_table = pd.DataFrame( sum_ngrams, columns=['Frequency'])
+        freq_table.to_csv('output_ngrams_freq.csv')
 
         # output_df = df_username_col.append(df)
 
