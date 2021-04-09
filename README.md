@@ -4,6 +4,7 @@
 In order to use this scripts ensure that the chat logs have been preprocessed and the dataset contains only the following columns:
 [SessionID, UserID, Speaker, Utterance, Tag] saved in a .csv file e.g. sample_corpus1.csv
 
+
 # About Corpus:  
 The dialogue corpus in sample_corpus1 shows a one-to-one turn-taking interaction where each speaker takes a turn and each turn is an utterance. 
 The dialogue corpus in sample_corpus2 shows does not necessarily follow a one-to-one turn-taking paradigm. Each speaker can have multiple turns before their partner responses. This shows a more naturalistic exchange between two speakers. 
@@ -38,6 +39,8 @@ In the command line:
 
     Output: 
     -  a csv file (output_ngramTable.csv) of n-grams predictors 
+
+*Note: -- To capture a specific set in the corpus, certain removal criteria can be incorporated. For instance, if you want to distinguish by gender, then at this point you would remove all rows that correspond to students who do not fit the criteria.
 
 # Step 3: Apply a threshold to intentionally include n-grams that occur in X% of converstions (test X for 10, 25, 33 and 50) to establish the most appropriate threshold for the dataset wih respect to the sample. 
 Note: The resulting total number of n-grams will be used to run a generalized regression model. Best practices for running regression model encourages the number of predictors less than the sample size. However, since we are using an exhaustive best subset method, the number of ngramas can be greater than the sample size, within a reasonable threshold.
