@@ -1,4 +1,12 @@
 # N_gram_Gen_Dialogue_Analysis
+If you use these scripts for your research, please cite the following papers: 
+
+Gloria Ashiya Katuka, Richard T. Bex, Mehmet Celepkolu, Kristy Elizabeth Boyer, Eric Wiebe, Bradford Mott and James Lester.
+2021. “My Partner was a Good Partner: Investigating the Relationship between Dialogue Acts and Satisfaction among Middle School Computer Science Learners”. In Proceedings of the 14th International Conference on Computer Supported Collaborative Learning (CSCL) 07 - 11 June 2021.
+
+Kimberly Michelle Ying, Gloria Ashiya Katuka, and Kristy Elizabeth Boyer.
+2021. Using Dialogue Analysis to Predict Women’s Stress During Remote
+Collaborative Learning in Computer Science. In 26th ACM Conference on Innovation and Technology in Computer Science Education V. 1 (ITiCSE 2021), June 26-July 1, 2021, Virtual Event, Germany. https://doi.org/10.1145/3430665.3456369
 
 # Data Pre-Processing 
 In order to use this scripts ensure that the chat logs have been preprocessed and the dataset contains only the following columns:
