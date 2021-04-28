@@ -144,7 +144,7 @@ if len(sys.argv) >1:
 
 
 #Use the follwoing to generate trigrams, if needed 
-  trigram_counter = 0 
+    trigram_counter = 0 
 
     # TODO: Change x and i to better names
     for i in range(len(tupleList) - 2):
