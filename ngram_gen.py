@@ -144,7 +144,7 @@ if len(sys.argv) >1:
 
 
 #Use the follwoing to generate trigrams, if needed 
-   """  trigram_counter = 0 
+  trigram_counter = 0 
 
     # TODO: Change x and i to better names
     for i in range(len(tupleList) - 2):
@@ -258,7 +258,7 @@ if len(sys.argv) >1:
                     if(set_student != tupleList[i + 2][1]):
                         writer.writerow([set_student, tupleList[i][2] + "_partner" + ", " + tupleList[i + 1][2] + "_partner" + ", " +
                                          tupleList[i + 2][2] + "_partner", tupleList[i][3] + "\n " + tupleList[i + 1][3] + "\n " + tupleList[i + 2][3]])
- """
+ 
         #writer.writerow(["Unigrams: " + str(unigram_counter), "Bigrams: " + str(bigram_counter)])
         #writer.writerow(["Unigrams: " + str(unigram_counter), "Bigrams: " + str(bigram_counter), "Trigrams: " + str(trigram_counter)])
 
