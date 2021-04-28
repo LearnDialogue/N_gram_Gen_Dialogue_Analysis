@@ -1,4 +1,4 @@
-SessionNo,SessionID,UserID,Speaker,Utterance,TAG
+UtteranceNo,SessionID,UserID,Speaker,Utterance,TAG
 1,Sess1 ,Sess1 _S1,S1,Hi,G
 2,Sess1 ,Sess1 _S2,S2,hey,G
 3,Sess1 ,Sess1 _S1,S1,what are we doing?,Q
@@ -42,7 +42,7 @@ SessionNo,SessionID,UserID,Speaker,Utterance,TAG
 3,Sess5,Sess5_S1,S1,you watch the game last night?,O
 4,Sess5,Sess5_S2,S2,which game?,O
 5,Sess5,Sess5_S1,S1,"football, we won",O
-6,Sess5,Sess5_S2,S2,"oh no, I didn’t ",O
+6,Sess5,Sess5_S2,S2,"oh no, I didn√ït ",O
 7,Sess5,Sess5_S1,S1,we smoked the other team tho lol,O
 8,Sess5,Sess5_S2,S2,Our team is good this year,O
 9,Sess5,Sess5_S1,S1,"true, what are we doing here tho?",Q
